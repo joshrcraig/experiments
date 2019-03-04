@@ -1,0 +1,110 @@
+{
+  "htmlFiles": [
+    {
+      "fileId": "0B87DbcuseMB9OHFHYUdvNk5xQk0",
+      "contentType": "text/html",
+      "name": "index.html",
+      "path": "0B87DbcuseMB9bjhoNGVlZmhKSjQ/"
+    },
+    {
+      "fileId": "0B87DbcuseMB9bm12dmdvbDZDZTQ",
+      "contentType": "text/html",
+      "name": "slideshow.html",
+      "path": "0B87DbcuseMB9bjhoNGVlZmhKSjQ"
+    },
+    {
+      "fileId": "0B87DbcuseMB9TXhLRVZ6aUtvclE",
+      "contentType": "text/html",
+      "name": "3navs.html",
+      "path": "0B87DbcuseMB9bjhoNGVlZmhKSjQ"
+    },
+    {
+      "fileId": "0B87DbcuseMB9X0szd0MtSF9UUkk",
+      "contentType": "text/html",
+      "name": "sidenav.html",
+      "path": "0B87DbcuseMB9bjhoNGVlZmhKSjQ"
+    },
+    {
+      "fileId": "0B87DbcuseMB9ODFBZUNhclp2N0U",
+      "contentType": "text/html",
+      "name": "parallax.html",
+      "path": "0B87DbcuseMB9bjhoNGVlZmhKSjQ/"
+    },
+    {
+      "fileId": "1PNW5xfFXwzLkM0anhvOy9aZ9v-H2sYGM",
+      "contentType": "text/html",
+      "name": "Gallery.html",
+      "path": "0B87DbcuseMB9bjhoNGVlZmhKSjQ"
+    },
+    {
+      "fileId": "176qtJtnah0M6PcOKrfwcCVyP6OnDHxqs",
+      "contentType": "text/html",
+      "name": "Gallery2.html",
+      "path": "0B87DbcuseMB9bjhoNGVlZmhKSjQ"
+    }
+  ],
+  "cssFiles": [
+    {
+      "fileId": "0B87DbcuseMB9RzQ2TG9UcUJsNkk",
+      "contentType": "text/css",
+      "name": "style.css",
+      "path": "0B87DbcuseMB9bjhoNGVlZmhKSjQ/"
+    },
+    {
+      "fileId": "0B87DbcuseMB9OXJBOXl1STBPS1k",
+      "contentType": "text/css",
+      "name": "style2.css",
+      "path": "0B87DbcuseMB9bjhoNGVlZmhKSjQ"
+    },
+    {
+      "fileId": "0B87DbcuseMB9OVljOVBTRTJvdTQ",
+      "contentType": "text/css",
+      "name": "style3.css",
+      "path": "0B87DbcuseMB9bjhoNGVlZmhKSjQ/"
+    },
+    {
+      "fileId": "0B87DbcuseMB9ZlhGa2hIaWhjaHc",
+      "contentType": "text/css",
+      "name": "style4.css",
+      "path": "0B87DbcuseMB9bjhoNGVlZmhKSjQ/"
+    },
+    {
+      "fileId": "0B87DbcuseMB9cVI1M0hBUmVhWmM",
+      "contentType": "text/css",
+      "name": "style5.css",
+      "path": "0B87DbcuseMB9bjhoNGVlZmhKSjQ/"
+    },
+    {
+      "fileId": "1uFdEJ1GMpou-6D569ZkSrLHU9VdFZdTk",
+      "contentType": "text/css",
+      "name": "style6.css",
+      "path": "0B87DbcuseMB9bjhoNGVlZmhKSjQ/"
+    },
+    {
+      "fileId": "1oV3tfrGATfrkZsBDJyjcpTIHu1gSCxXc",
+      "contentType": "text/css",
+      "name": "style7.css",
+      "path": "0B87DbcuseMB9bjhoNGVlZmhKSjQ/"
+    }
+  ],
+  "javascriptFiles": [
+    {
+      "fileId": "0B87DbcuseMB9VjZtbWZWUVNJRG8",
+      "contentType": "text/javascript",
+      "name": "code.js",
+      "path": "0B87DbcuseMB9bjhoNGVlZmhKSjQ/"
+    },
+    {
+      "fileId": "0B87DbcuseMB9LVJIaERSNFFTWkE",
+      "contentType": "text/javascript",
+      "name": "code2.js",
+      "path": "0B87DbcuseMB9bjhoNGVlZmhKSjQ"
+    },
+    {
+      "fileId": "0B87DbcuseMB9eHJVX0t4d1NnSk0",
+      "contentType": "text/javascript",
+      "name": "code3.js",
+      "path": "0B87DbcuseMB9bjhoNGVlZmhKSjQ"
+    }
+  ]
+}

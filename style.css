@@ -1,0 +1,269 @@
+/*index - this does the sticky navigation (top) and the header having an image beside the text*/
+
+body {
+  font-family: Verdana;
+  background: linear-gradient(to right, lightgreen, teal);
+  margin:0;
+    }
+
+img {
+    max-width:100%;
+    }
+
+.box {
+  border-radius: 1px;
+  padding: 10px;
+    }
+    
+header {
+    background:rgba(0,0,0,.2);
+    grid-area:header;
+    }
+
+.headerpic {
+    grid-area:headerpic;
+    margin:auto 0;
+    max-height:12em; /*Note that the height and width may need to be adjusted for your image*/
+    }
+
+.headertext {
+    grid-area:headertext;
+    text-align:center;
+    }
+    
+.headerwrapper { /*Subgrid in my header to keep my picture and text seperated*/
+    display:grid;
+    grid-template-columns:30% auto;
+    grid-template-areas:
+    "headerpic headertext"
+    }
+
+header h1 {
+     font-size:6vw;
+     font-family:Impact;
+     text-shadow: 2px 2px 5px navy;
+     margin: 2px 0;
+    }
+
+header h4 {
+    font-size:3vw;
+    font-family:Arial;
+    color:navy;
+    margin:1em 0 0 0;
+    }
+    
+header a {
+    text-decoration:none;
+    color:mediumspringgreen;
+    }
+
+nav {   
+    background-color:navy;
+    font-size:125%;
+    grid-area:nav;
+    text-align:center;
+    padding:.5em;
+    margin:0;
+    /*Lines 102 to 105 make the menu stick to the top*/
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index:999;
+}
+/*This stuff is to make my navigation go horizontal on full screen*/
+.first {
+    grid-area:first;
+    margin-left:0;
+}
+
+.second {
+    grid-area:second;
+}
+
+.third {
+    grid-area:third;
+}
+
+.fourth {
+    grid-area:fourth;
+}
+
+.fifth {
+    grid-area:fifth;
+}
+
+#navwrapper {
+    display:grid;
+    grid-template-areas:
+    "first" 
+    "second"
+    "third"
+    "fourth" 
+    "fifth";
+    }
+    
+main {
+    background:rgba(0,0,0,.2);
+    color:white;
+    grid-area:main;
+    }
+
+main a {
+    color:mediumspringgreen;
+    font-weight:bold;
+}
+
+.csstricks {
+    margin:auto 5%;
+    max-width:90%;
+    } 
+    
+.section1 { 
+    background-color: brown;
+    color: white;
+    grid-area:section1;
+    }
+
+.section2{
+    background-color: indigo;
+    color: white;
+    grid-area:section2;
+    }
+
+.section3{
+    background-color: orange;
+    color: white;
+    grid-area:section3;
+    }
+    
+section a {
+    color:black;
+    font-weight:bold;
+}
+
+.article1 {
+    background-color:gray;
+    color: black;
+    grid-area:article1;
+    }
+
+.article2 {
+    background-color: rgba(255,255,255,.7);
+    color: block;
+    grid-area:article2;
+    }
+
+.article3 {
+    background:linear-gradient(to top, white, black);
+    color: white;
+    grid-area:article3;
+    }
+
+.article4 {
+    background-color: rgba(0,0,0,.8);
+    color: white;
+    grid-area:article4;
+    }
+
+aside {
+    background:rgba(0,0,0,.2);
+    color: white;
+    grid-area:aside;
+    }
+
+footer {
+    background:rgba(0,0,0,.2);
+    color:white;
+    text-align:right;
+    grid-area:footer;
+    }
+    
+/*--------Mobile first - no media query needed until the screen is larger than 480px---------*/  
+.wrapper1 { /*index.html*/
+    display: grid;
+    margin:0;
+    grid-gap: .5em;
+    grid-template-areas:
+    "nav"
+    "header"
+    "main"
+    "aside"
+    "footer";
+  }
+ 
+/*This stuff is for the hamburger menu*/
+.toggleNav {
+    display:grid; /*This is what allows the hamburger icon and "Menu" to display*/
+    }
+
+#flex-nav ul {
+    display: none; /*jQuery toggles the nav from to this class to the .open when clicked*/
+    text-align:center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+ 
+#flex-nav ul.open { /*.open is the class that gets toggled when clicked (with help from the jQuery code)*/
+    display:grid;
+    }
+    
+#flex-nav li {
+    padding-left:10px;
+    padding-top:10px;
+    }
+
+#flex-nav a {
+    color:white;
+    text-decoration:none;
+    }
+
+#flex-nav a:hover {
+    color:mediumspringgreen;
+    }
+
+/*---------------------Tablet media query----------------------------*/
+@media only screen and (min-width: 480px)  {
+.wrapper1 { /*index.html*/
+    grid-template-columns: 45% auto;
+    grid-template-areas:
+    "nav nav"
+    "header header"
+    "main aside"
+    "footer footer";
+    }
+} 
+
+/*---------------------Desktop media query----------------------------*/
+@media only screen and (min-width: 960px)   {
+     
+.wrapper1 { /*index.html*/
+    grid-template-columns: 60% auto;
+    grid-template-areas:
+    "nav nav"        
+    "header header"
+    "main aside"
+    "footer footer";
+    }
+    
+#navwrapper {
+    display:grid;
+    grid-template-areas:
+    "first second third fourth fifth";
+    }
+    
+.toggleNav {
+    display: none; /*Makes the hamburger icon with the word "Menu" to disappear at this screen size*/
+  }
+  
+#flex-nav ul {
+    display:grid;
+    text-align:center;
+  }
+
+#flex-nav li {
+    
+    padding-top:10px;
+    }
+    
+}
