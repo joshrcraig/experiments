@@ -1,3 +1,14 @@
+:root {
+  --gutter: 20px;
+}
+
+.app {
+  padding: var(--gutter) 0;
+  display: grid;
+  grid-gap: var(--gutter) 0;
+  grid-template-columns: var(--gutter) 1fr var(--gutter);
+  align-content: start;
+}
 
 .app > * {
   grid-column: 2 / -2;
@@ -71,3 +82,5 @@ h3 {
   justify-content: center;
   align-items: center;
   background: #fff;
+  border-radius: 8px;
+}
